@@ -1,0 +1,11 @@
+services:
+  tinytales:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.local        # passes DEEPSEEK_API_KEY to the container
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
