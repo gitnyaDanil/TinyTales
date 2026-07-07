@@ -34,8 +34,8 @@ Ask Pip anything. She'll explain it like you're five, using stories about cookie
 
 ### 1. Clone & install
 ```bash
-git clone https://github.com/YOUR_USERNAME/tinytales-ai.git
-cd tinytales-ai
+git clone https://github.com/gitnyaDanil/TinyTales.git
+cd TinyTales
 npm install
 ```
 
