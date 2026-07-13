@@ -14,7 +14,7 @@ Rules:
 export async function POST(request) {
   const apiKey = process.env.DEEPSEEK_API_KEY || process.env.OPENAI_API_KEY || "lm-studio";
   const endpoint = process.env.OPENAI_BASE_URL || "https://api.deepseek.com/v1";
-  const modelName = process.env.OPENAI_MODEL || "deepseek-chat";
+  const modelName = process.env.OPENAI_MODEL || "deepseek-v4-flash";
 
   let body;
   try {
@@ -47,7 +47,7 @@ export async function POST(request) {
   if (!upstream.ok) {
     const err = await upstream.json().catch(() => ({}));
     return NextResponse.json(
-      { error: err?.error?.message ?? `DeepSeek error ${upstream.status}` },
+      { error: err?.error?.message ?? `AI provider error ${upstream.status}` },
       { status: upstream.status }
     );
   }
