@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react";
+
 export const metadata = {
   title: "TinyTales AI",
   description: "Big ideas explained in tiny words.",
@@ -6,7 +8,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, height: "100vh" }}>{children}</body>
+      <body style={{ margin: 0, height: "100vh" }}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
