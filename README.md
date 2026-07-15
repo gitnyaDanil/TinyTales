@@ -4,10 +4,14 @@
 
 Ask Pip anything. She'll explain it like you're five, using stories about cookies, puppies, and lego bricks.
 
+### 🌐 [Live Demo → tiny-tales-lemon.vercel.app](https://tiny-tales-lemon.vercel.app)
+
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)
 ![React](https://img.shields.io/badge/React-18-blue?logo=react)
 ![LM Studio](https://img.shields.io/badge/LM%20Studio-compatible-purple)
 ![DeepSeek](https://img.shields.io/badge/DeepSeek-compatible-green)
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://tiny-tales-lemon.vercel.app)
+
 
 ---
 
