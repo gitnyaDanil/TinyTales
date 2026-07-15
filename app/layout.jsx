@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "TinyTales AI",
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
       <body style={{ margin: 0, height: "100vh" }}>
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
